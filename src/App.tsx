@@ -5,7 +5,7 @@ import { Clipboard, PlusCircle } from "@phosphor-icons/react";
 import { Header, Task } from "./components";
 
 export interface TaskApp {
-  id: string,
+  id: string
   content: string
   isCompleted: boolean
 }
@@ -16,7 +16,6 @@ function App() {
   
   function handleCreateNewTask(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     setTasks([...tasks, {id: uuidv4(), content: contentTask, isCompleted: false}])
     setContentTask('')
   }
@@ -26,14 +25,14 @@ function App() {
   }
 
   function checkedTask(id: string) {
-    const taskD = tasks.map((task) => {
+    const ListUpdatingIsCompleted = tasks.map((task) => {
       if(task.id === id){
         task.isCompleted = !task.isCompleted
       }
       return task
     })
 
-    setTasks(taskD)
+    setTasks(ListUpdatingIsCompleted)
   }
 
   function deleteTask(id: string){
@@ -92,7 +91,7 @@ function App() {
               </header>
 
               {tasks.length !== 0 ? (
-                <div className="flex flex-col gap-3 overflow-auto h-64">
+                <div className="flex flex-col gap-3 min-h-64 pb-6">
                   {tasks.map((task) => {
                     return (
                       <Task 

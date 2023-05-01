@@ -1,12 +1,6 @@
-<h1 align="center"> Desafio 01 - Praticando os conceitos do ReactJS </h1>
+![preview](./src/assets/GIF/todo.gif)
 
-<p align="center">
-    Desafio para reforçar os conceitos mais importantes do ReactJS e aprender ainda mais conceitos que serão utilizados em todas as aplicações.
-</p>
-
-<p align="center">
-  <img alt="todolist" src="./src/assets/GIF/todo.gif" width="100%">
-</p>
+Projeto criado para ajudar meu aprendizado com os principais conceitos do ReactJS, Estado e imutabilidade. Este projeto é feito para verificar suas tarefas do dia.
 
 [Clique aqui para abrir o site de visualização](https://todo-list-beige-ten.vercel.app/)
 
@@ -16,8 +10,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - ReactJS
 - TypeScript
+- TailwindCSS
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
+
+## 📃 Lista de Tarefas
 
 - [X]  **Adicionar uma nova tarefa**
 - [X]  **Marcar e desmarcar uma tarefa como concluída**

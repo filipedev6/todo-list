@@ -29,9 +29,17 @@ export function Task({ content, onCheckedTask, id, onDeleteTask, isCompleted}: T
                 {completed ? <CheckCircle color="#5E60CE" size={22} weight="fill"/> : <Circle color="#4EA8DE" size={22} weight="regular"/>}
             </button>
 
-            <p className='text-sm font-normal text-base-100 leading-none select-none break-all'>
-                {content}
-            </p>
+            {
+                !completed ? (
+                    <p className='text-sm font-normal text-base-100 leading-none select-none break-all'>
+                        {content}
+                    </p>
+                ) : (
+                    <s className='text-sm font-normal text-base-300 leading-none select-none break-all'>
+                        {content}
+                    </s>
+                )
+            }
             <button onClick={handleDeleteTask} className="hover:bg-base-400 hover:text-red-400 p-1 rounded text-base-300 transition-all">
                 <Trash size={24} color="currentColor"/>
             </button>

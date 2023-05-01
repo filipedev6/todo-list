@@ -1,3 +1,5 @@
+# Todo List 
+
 ![preview](./src/assets/GIF/todo.gif)
 
 Projeto criado para ajudar meu aprendizado com os principais conceitos do ReactJS, Estado e imutabilidade. Este projeto é feito para verificar suas tarefas do dia.

@@ -19,7 +19,6 @@ function App() {
     setTasks((tasksCurrent) => {
       return [...tasksCurrent, {id: uuidv4(), content: contentTask, isCompleted: false}]
     })
-    console.log(tasks)
     setContentTask('')
   }
 

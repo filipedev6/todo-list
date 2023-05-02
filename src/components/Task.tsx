@@ -40,6 +40,7 @@ export function Task({ content, onCheckedTask, id, onDeleteTask, isCompleted}: T
                     </s>
                 )
             }
+
             <button onClick={handleDeleteTask} className="hover:bg-base-400 hover:text-red-400 p-1 rounded text-base-300 transition-all">
                 <Trash size={24} color="currentColor"/>
             </button>

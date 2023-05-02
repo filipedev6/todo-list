@@ -16,7 +16,10 @@ function App() {
   
   function handleCreateNewTask(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setTasks([...tasks, {id: uuidv4(), content: contentTask, isCompleted: false}])
+    setTasks((tasksCurrent) => {
+      return [...tasksCurrent, {id: uuidv4(), content: contentTask, isCompleted: false}]
+    })
+    console.log(tasks)
     setContentTask('')
   }
 
